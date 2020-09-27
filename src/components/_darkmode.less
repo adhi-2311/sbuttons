@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>DAY AND NIGHT MODE TOGGLER</title>
+    <style>
+    .dark{
+    background:black;
+    /*add color:white; if text color is initially black for better visibility*/
+    color: white;
+}
+</style>
+	<!-- include jquery, bootstrap and our stylesheet -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   </head>
+   <body>
+   	<div class="buttons">
+				<button class="btn btn-default js-go-light">LIGHT MODE</button>
+				<button class="btn btn-default js-go-dark">DARK MODE</button>
+	</div>
+	<div class="text">
+		<p>Click on the DARK MODE BUTTON TO TOGGLE</p>
+	</div>
+    <script>
+    	$('.js-go-dark').click(function(){
+			alert('Go to night mode - replace me with the CSS changing code!');
+			$('body').addClass('dark');
+        $('div').addClass('dark');
+        $('li').addClass('dark');
+
+		});
+		$('.js-go-light').click(function(){
+			alert('Go to day mode - replace me with the CSS changing code!');
+			$('body').removeClass('dark');
+        $('div').removeClass('dark');
+        $('li').removeClass('dark');
+		});
+	</script>
+   </body>
+   </html>
